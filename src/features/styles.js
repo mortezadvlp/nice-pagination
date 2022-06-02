@@ -23,6 +23,7 @@ const styles = {
         borderRadius: '50%',
         width: '35px',
         height: '35px',
+        paddingTop: '0.35rem',
         marginLeft: '0.125rem', 
         marginRight: '0.125rem', 
         border: '1px solid',
@@ -32,6 +33,7 @@ const styles = {
     squared: {
         width: '35px',
         height: '35px',
+        paddingTop: '0.35rem',
         backgroundColor: 'transparent',
         border: '1px solid',
         cursor: 'pointer',

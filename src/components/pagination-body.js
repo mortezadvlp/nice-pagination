@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import injectSheet from 'react-jss';
 import DotsButton from './dots-button';
 import NextButton from './next-button';

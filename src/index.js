@@ -1,3 +1,4 @@
+import React from 'react'
 import PaginationBody from "./components/pagination-body";
 import TypeContext from "./features/type-context";
 

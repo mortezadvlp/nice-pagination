@@ -31,7 +31,7 @@ class Example extends Component {
   }
 }
 ```
-This appear a simple pagination control with 10 pages where the first page is marked as selected. If the total page is less than 6, all page indicators will be shown. Otherwise, Page indicatores will be displyed as spread dots. By clicking on each page indicator, seleted page number will be printed in console.
+This appears a simple pagination control with 10 pages where the first page is marked as selected. If the total page is less than 6, all page indicators will be shown. Otherwise, Page indicatores will be displyed as spread dots. By clicking on each page indicator, seleted page number will be printed in console.
 
 ## Properties
 

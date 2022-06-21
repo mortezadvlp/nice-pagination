@@ -1,6 +1,6 @@
 # nice-pagination
 
-You will have a nice and simple to use paginnation component.
+You will have a nice and simple to use pagination component.
 
 [![NPM](https://img.shields.io/npm/v/nice-pagination.svg)](https://www.npmjs.com/package/nice-pagination) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -109,7 +109,7 @@ You can change the appearance of buttons by `settings` like:
 ```
 
 If you want to change appearance of some elements, you should put just those elements in the settings objec.
-For example we need to change previous and next buttons, so:
+For example if we need to change previous and next buttons, so:
 
 ```bash
 settings: {
@@ -117,6 +117,7 @@ settings: {
   CustomNextButton : MyNextBbuttonComponent
 }
 ```
+Custom buttons should have a callback function named 'onClick' that has an input argument
 
 
 

@@ -6,9 +6,14 @@ You will have a nice and simple to use pagination component.
 
 ## Install
 
-Use for React v17:
+Use for React v18:
 ```bash
 npm install --save nice-pagination
+```
+
+Use for React v17:
+```bash
+npm install --save nice-pagination@2.0.1
 ```
 
 Use for React v16:

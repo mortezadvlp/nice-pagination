@@ -12,3 +12,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-primary {
+  background-color: black !important;
+}
+
+.text-secondary {
+  color: white !important;
+}
+
+.border-primary {
+  border-color: black !important;
+}
+
+.bc {
+  border-color: brown !important;
+}
+
+.bgsc {
+  background-color: brown !important;
+}
+
+.tsc {
+  color: rgb(255, 188, 31) !important;
+}
+
+.colorGreen {
+  color: limegreen !important;
+  font-weight: bold;
+}
+
+.bg {
+  background-color: pink !important;
+}

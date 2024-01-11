@@ -1,9 +1,126 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.all * { 
+  box-sizing: border-box;
+}
+
+/*.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dotButton {
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.rounded {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 0.125rem; 
+    margin-right: 0.125rem; 
+    border: 1px solid;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.squared {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.selected {
+  cursor: default;
+}*/
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+.subcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.dotButton {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  border: 1px solid;
+  background-color: transparent;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.squared {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.selected {
+  cursor: default;
 }

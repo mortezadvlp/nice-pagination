@@ -1,14 +1,14 @@
-import React from 'react'
-import injectSheet from 'react-jss';
-import styles from '../features/styles';
+import React, { useContext } from 'react'
+import styles from '../styles.module.css';
+import TypeContext from '../features/type-context';
 
-function DotsButton({ classes, onClick }) {
+export default function DotsButton({ onClick }) {
+
+    const context = useContext(TypeContext);
 
     return (
         <button type='button' data-testid='dotsbutton'
-            className={classes.dotButton}
+            className={`${styles.dotButton} ${context.textClass}`}
             onClick={onClick} >...</button>
     );
 }
-
-export default injectSheet(styles)(DotsButton);

@@ -1,5 +1,6 @@
 import React from 'react'
-import { NicePagination } from 'nice-pagination'
+import NicePagination from 'nice-pagination'
+import 'nice-pagination/dist/index.css'
 
 const App = () => {
   return (
@@ -13,7 +14,13 @@ const App = () => {
         onPageChanged={(p) => console.log("SelectedPage:", p)}  />
         
       <NicePagination initialPage={1} totalPages={10} minButtonsToDots={6}
-        type='circle'
+        type='circle' 
+        borderClass='bc' bgSelectedClass='bgsc' textSelectedClass='tsc'
+        onPageChanged={(p) => console.log("SelectedPage:", p)}  />
+
+      <NicePagination initialPage={1} totalPages={10} minButtonsToDots={6}
+        type='circle'className='bg'  
+        textClass='colorGreen' borderClass='bc' bgSelectedClass='bgsc' textSelectedClass='tsc'
         onPageChanged={(p) => console.log("SelectedPage:", p)}  />
     </div>
     

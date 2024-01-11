@@ -1,18 +1,15 @@
 import React, { useContext } from 'react';
-import injectSheet from 'react-jss';
-import styles from '../features/styles';
+import styles from '../styles.module.css';
 import TypeContext from '../features/type-context';
 
-function PageButton({ classes, text, onClick }) {
+export default function PageButton({ text, onClick }) {
 
-    const type = useContext(TypeContext);
+    const context = useContext(TypeContext);
 
     return (
         <button type='button' data-testid='pagebutton'
-            className={type==='circle' ? [classes.rounded, 'border-primary'].join(' ') :
-                        type==='square' ? [classes.squared, 'border-primary'].join(' ') : {}}
+            className={`${context.type==='circle' ? styles.rounded  :
+                            context.type==='square' ? styles.squared : ''} border-primary ${context.borderClass} ${context.textClass}`}
             onClick={onClick} >{text}</button>
     );
 }
-
-export default injectSheet(styles)(PageButton);

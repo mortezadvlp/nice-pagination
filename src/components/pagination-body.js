@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import injectSheet from 'react-jss';
 import DotsButton from './dots-button';
 import NextButton from './next-button';
 import PageButton from './page-button';
 import PreButton from './pre-button';
 import { calcButtons } from '../features/controller';
-import styles from '../features/styles';
+import styles from '../styles.module.css';
 import SelectedButton from './selected-button';
 
-function PaginationBody({ classes, initialPage, totalPages, minButtonsToDots, dotsButtonStep = 3, settings = {}, onPageChanged, className, style }) {
+export default function PaginationBody({ initialPage, totalPages, minButtonsToDots, dotsButtonStep = 3, settings = {}, onPageChanged, className = '', style }) {
 
   const {
     CustomPreButton = PreButton, 
@@ -51,8 +50,8 @@ function PaginationBody({ classes, initialPage, totalPages, minButtonsToDots, do
   }, [page, totalPages, minButtonsToDots]);
 
   return (
-    <div className={[classes.container, className].join(' ')} style={style}>
-      <div className={classes.subcontainer}>
+    <div className={`${styles.all} ${styles.container} ${className}`} style={style}>
+      <div className={`${styles.subcontainer}`}>
         {(totalPages >= 3) &&
           <CustomPreButton data-testid="prebutton" onClick={() => pageChangeHandler('-')} />
         }
@@ -80,5 +79,3 @@ function PaginationBody({ classes, initialPage, totalPages, minButtonsToDots, do
     </div>
   );
 }
-
-export default injectSheet(styles)(PaginationBody);

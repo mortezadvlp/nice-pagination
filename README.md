@@ -33,6 +33,7 @@ Visit this link:
 ```jsx
 import React from 'react'
 import NicePagination from 'nice-pagination'
+import 'nice-pagination/dist/index.css'
 
 const Example = () => {
   return <NicePagination  initialPage={1} totalPages={10} minButtonsToDots={6}

@@ -24,7 +24,7 @@ npm install --save nice-pagination@1.1.0
 ## Online Demo
 
 Visit this link:
-[https://simacoders.ir/features/#NicePagination](https://simacoders.ir/features/#NicePagination)
+[https://mortezadvlp.ir/LibrariesDemo/#NicePagination](https://mortezadvlp.ir/LibrariesDemo/#NicePagination)
 
 
 
